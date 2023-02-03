@@ -1,0 +1,2 @@
+*spinetta.txt* nvim-spinetta
+A Neovim plugin
