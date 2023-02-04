@@ -1,2 +1,158 @@
 *spinetta.txt* nvim-spinetta
-A Neovim plugin
+A Neovim plugin written in Lua for using a spinner during a job process 
+           _            _   _         ~
+ ___ _ __ (_)_ __   ___| |_| |_ __ _  ~  
+/ __| '_ \| | '_ \ / _ \ __| __/ _` | ~  
+\__ \ |_) | | | | |  __/ |_| || (_| | ~
+|___/ .__/|_|_| |_|\___|\__|\__\__,_| ~
+    |_|                               ~
+
+REFERENCE MANUAL
+================================================================================
+CONTENTS                                                         *nvim-spinetta*
+
+    0. Introduction ............. |spinetta-introduction|
+    1. Usage .................... |spinetta-usage|
+	 1.1 Default Implementation . |spinetta-default|
+	 1.2 Spinner Implementation . |spinetta-spinners|
+	 1.3 Jobs ................... |spinetta-jobs|
+	 1.4 Function Parameter ..... |spinetta-functional|
+	 1.5 Interrupt Job .......... |spinetta-interrupt|
+	 1.6 Spinners ............... |spinetta-spinners|
+
+================================================================================
+INTRODUCTION                                             *spinetta-introduction*
+
+nvim-spinetta is a Neovim plugin build to a proper spinner during a job process.
+This is meant to be used mainly with 'jobstart' function but the plugin is open
+to be used with any function you like.
+
+================================================================================
+1. USAGE                                                     *spinetta-commands*
+
+The following are examples of different implementations of nvim-spinetta
+
+--------------------------------------------------------------------------------
+1.1 SIMPLE IMPLEMENTATION                                     *spinetta-default*
+
+By default the values are: >
+    {
+        spinner = DEFAULT_SPINNER, -- List of figures to use in the spinner
+        speed_ms = 200,            -- Speed of the spinner in miliseconds
+        main_msg = "",             -- Initial message in spinner
+        final_mst = nil,           -- Message when the job is finished
+        interrupted_msg = nil      -- Message when the job is interrupted
+    }
+<
+
+First, create a instance : >
+	local spinetta = require'spinetta'
+    local my_spinner = spinetta:new()
+<
+
+Second, start the spinner and the job: >
+    local my_job = "here some job to execute in the background"
+    my_spinner:start(spinetta.job_to_run(my_job))
+<
+
+--------------------------------------------------------------------------------
+1.2 SPINNER IMPLEMENTATION                                    *spinetta-spinner*
+
+The available spinners are: >
+	DEFAULT_SPINNER
+    ARROW_SPINNER
+    EQUALS_SPINNER
+    PING_PONG_SPINNER
+    POINT_SPINNER
+    PROGRESS_BAR_SPINNER
+<
+
+First, create a instance : >
+	local spinetta = require'spinetta'
+    -- Example with ARROW_SPINNER
+    local my_spinner = spinetta:new{
+        spinner = spinetta.ARROW_SPINNER,
+        speed_ms = 100,
+        main_msg = "Loading ",
+        final_msg = "Done!"
+    }
+<
+
+Second, start the spinner and the job: >
+    local my_job = "here some job to execute in the background"
+    my_spinner:start(spinetta.job_to_run(my_job))
+<
+
+--------------------------------------------------------------------------------
+1.3 JOBS                                                         *spinetta-jobs*
+
+nvim-spinetta contains a method to create a job: >
+	require'spinetta'.job_to_run("curl https://host/path")
+<
+
+This is simply a wrapper of: >
+    vim.fn.jobpid(vim.fn.jobstart("curl https://host/path"))
+<
+
+A second alternative (if you want to pass a job pid by another means) would be:
+>
+	local spinetta = require'spinetta'
+    local my_spinner = spinetta:new()
+    
+    local pid = my_job() -- Here your implementation
+    my_spinner:start(spinetta.break_when_pid_is_complete(pid))
+<
+
+--------------------------------------------------------------------------------
+1.4 FUNCTION PARAMETER                                     *spinetta-functional*
+
+If you want to stop the spinner with your own cut function, pass it by
+parameter: >
+	local spinetta = require'spinetta'
+    local my_spinner = spinetta:new()
+    
+    my_spinner:start(function()
+        if some_value then
+            return true
+        else
+            return false
+        end
+    end)
+<
+
+NOTE: The function passed by parameter must return a boolean value to break the
+spinner process
+
+--------------------------------------------------------------------------------
+1.5 INTERRUPT JOB                                           *spinetta-interrupt*
+
+Considering that the job executed maybe could not end. To stop it simply press
+Ctrl-C. The parameter 'interrupted_msg' can be set to show a message when the
+job is interrupted by the user: >
+	require'spinetta':new({ interrupted_msg = "Job interrupted by the user" })
+<
+
+--------------------------------------------------------------------------------
+1.6 SPINNERS                                                 *spinetta-spinners*
+
+The set of available spinners included are: >
+	DEFAULT_SPINNER
+    ARROW_SPINNER
+    EQUALS_SPINNER
+    PING_PONG_SPINNER
+    POINT_SPINNER
+    PROGRESS_BAR_SPINNER
+<
+
+If you want to set your own, simply pass it by parameter: >
+	local spinetta = require'spinetta'
+    local my_personal_spinner = {
+        '.', '..', '...', '....', '.....', '......', '.......', '........'
+    }
+    local my_spinner = spinetta:new{ spinner = my_personal_spinner }
+
+    local my_job = "here some job to execute in the background"
+    my_spinner:start(spinetta.job_to_run(my_job))
+<
+
+--------------------------------------------------------------------------------

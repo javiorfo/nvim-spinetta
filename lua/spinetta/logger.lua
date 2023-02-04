@@ -22,10 +22,6 @@ function M:new(plugin_name)
     return table
 end
 
-function M:warn(msg)
-    logger(self.plugin_name, msg)(vim.log.levels.WARN)
-end
-
 function M:error(msg)
     logger(self.plugin_name, msg)(vim.log.levels.ERROR)
 end
