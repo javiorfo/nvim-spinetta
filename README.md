@@ -15,7 +15,7 @@ use 'javio7/nvim-spinetta'
 ```
 
 ## Overview
-- Includes 5 spinners (It's possible to set your own)
+- Includes 6 spinners (It's possible to set your own)
 - In **start** function you can construct it three different ways
 - Open to apply not only for a job
 - Interruption option is available
