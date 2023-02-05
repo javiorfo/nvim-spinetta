@@ -34,7 +34,7 @@ use 'javio7/nvim-spinetta'
 
 - First, create a instance:
 ```lua
-	local spinetta = require'spinetta'
+    local spinetta = require'spinetta'
     local my_spinner = spinetta:new()
 ```
 
