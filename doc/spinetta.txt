@@ -13,12 +13,12 @@ CONTENTS                                                         *nvim-spinetta*
 
     0. Introduction ............. |spinetta-introduction|
     1. Usage .................... |spinetta-usage|
-	 1.1 Default Implementation . |spinetta-default|
-	 1.2 Spinner Implementation . |spinetta-spinners|
-	 1.3 Jobs ................... |spinetta-jobs|
-	 1.4 Function Parameter ..... |spinetta-functional|
-	 1.5 Interrupt Job .......... |spinetta-interrupt|
-	 1.6 Spinners ............... |spinetta-spinners|
+     1.1 Default Implementation . |spinetta-default|
+     1.2 Spinner Implementation . |spinetta-spinners|
+     1.3 Jobs ................... |spinetta-jobs|
+     1.4 Function Parameter ..... |spinetta-functional|
+     1.5 Interrupt Job .......... |spinetta-interrupt|
+     1.6 Spinners ............... |spinetta-spinners|
 
 ================================================================================
 INTRODUCTION                                             *spinetta-introduction*
@@ -46,7 +46,7 @@ By default the values are: >
 <
 
 First, create a instance : >
-	local spinetta = require'spinetta'
+    local spinetta = require'spinetta'
     local my_spinner = spinetta:new()
 <
 
@@ -59,7 +59,7 @@ Second, start the spinner and the job: >
 1.2 SPINNER IMPLEMENTATION                                    *spinetta-spinner*
 
 The available spinners are: >
-	DEFAULT_SPINNER
+    DEFAULT_SPINNER
     ARROW_SPINNER
     EQUALS_SPINNER
     PING_PONG_SPINNER
@@ -68,7 +68,7 @@ The available spinners are: >
 <
 
 First, create a instance : >
-	local spinetta = require'spinetta'
+    local spinetta = require'spinetta'
     -- Example with ARROW_SPINNER
     local my_spinner = spinetta:new{
         spinner = spinetta.ARROW_SPINNER,
@@ -87,7 +87,7 @@ Second, start the spinner and the job: >
 1.3 JOBS                                                         *spinetta-jobs*
 
 nvim-spinetta contains a method to create a job: >
-	require'spinetta'.job_to_run("curl https://host/path")
+    require'spinetta'.job_to_run("curl https://host/path")
 <
 
 This is simply a wrapper of: >
@@ -96,7 +96,7 @@ This is simply a wrapper of: >
 
 A second alternative (if you want to pass a job pid by another means) would be:
 >
-	local spinetta = require'spinetta'
+    local spinetta = require'spinetta'
     local my_spinner = spinetta:new()
     
     local pid = my_job() -- Here your implementation
@@ -108,7 +108,7 @@ A second alternative (if you want to pass a job pid by another means) would be:
 
 If you want to stop the spinner with your own cut function, pass it by
 parameter: >
-	local spinetta = require'spinetta'
+    local spinetta = require'spinetta'
     local my_spinner = spinetta:new()
     
     my_spinner:start(function()
@@ -129,14 +129,14 @@ spinner process
 Considering that the job executed maybe could not end. To stop it simply press
 Ctrl-C. The parameter 'interrupted_msg' can be set to show a message when the
 job is interrupted by the user: >
-	require'spinetta':new({ interrupted_msg = "Job interrupted by the user" })
+    require'spinetta':new({ interrupted_msg = "Job interrupted by the user" })
 <
 
 --------------------------------------------------------------------------------
 1.6 SPINNERS                                                 *spinetta-spinners*
 
 The set of available spinners included are: >
-	DEFAULT_SPINNER
+    DEFAULT_SPINNER
     ARROW_SPINNER
     EQUALS_SPINNER
     PING_PONG_SPINNER
@@ -145,7 +145,7 @@ The set of available spinners included are: >
 <
 
 If you want to set your own, simply pass it by parameter: >
-	local spinetta = require'spinetta'
+    local spinetta = require'spinetta'
     local my_personal_spinner = {
         '.', '..', '...', '....', '.....', '......', '.......', '........'
     }
