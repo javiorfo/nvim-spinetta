@@ -49,11 +49,11 @@ use 'javio7/nvim-spinetta'
 - You can add your own spinner if you like. Further information in `:help spinetta`
 
 ## Screenshots
-### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/javio7/nvim-spinetta/blob/master/tests/test_spinners.lua)
+#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/javio7/nvim-spinetta/blob/master/tests/test_spinners.lua)
 
 <img src="https://github.com/javio7/img/blob/master/nvim-spinetta/spinetta-spinners.gif?raw=true" alt="spinetta" style="width:600px;"/>
 
-### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/javio7/nvim-spinetta/blob/master/tests/test_interruption.lua)
+#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/javio7/nvim-spinetta/blob/master/tests/test_interruption.lua)
 <img src="https://github.com/javio7/img/blob/master/nvim-spinetta/spinetta-interrupt.gif?raw=true" alt="spinetta" style="width:600px;"/>
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javio7/nvim-nyctovim) is used in this image.
