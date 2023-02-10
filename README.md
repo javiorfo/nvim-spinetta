@@ -1,5 +1,5 @@
 # nvim-spinetta
-### :guitar: Luis Alberto spinning
+### :tornado: spinning...
 *nvim-spinetta is a Neovim plugin written in Lua for using a spinner during a job process.*
 
 ## Caveats
