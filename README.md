@@ -52,10 +52,10 @@ use 'charkuils/nvim-spinetta'
 ## Screenshots
 #### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/tests/test_spinners.lua)
 
-<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/spinetta-spinners.gif?raw=true" alt="spinetta" style="width:800px;"/>
+<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
 #### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/tests/test_interruption.lua)
-<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/spinetta-interrupt.gif?raw=true" alt="spinetta" style="width:800px;"/>
+<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/charkuils/nvim-nyctovim) is used in this image.
 
