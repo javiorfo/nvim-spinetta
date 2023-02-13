@@ -23,9 +23,9 @@ CONTENTS                                                         *nvim-spinetta*
 ================================================================================
 INTRODUCTION                                             *spinetta-introduction*
 
-nvim-spinetta is a Neovim plugin build to a proper spinner during a job process.
-This is meant to be used mainly with 'jobstart' function but the plugin is open
-to be used with any function you like.
+nvim-spinetta is a Neovim plugin for building a proper spinner during a job 
+process. This is meant to be used mainly with 'jobstart' function but the plugin 
+is open to be used with any function you like.
 
 ================================================================================
 1. USAGE                                                     *spinetta-commands*
