@@ -16,10 +16,14 @@ use 'charkuils/nvim-spinetta'
 ```
 
 ## Overview
-- Includes 6 spinners (It's possible to set your own)
-- In **start** function you can construct it three different ways
-- Open to apply not only for a job
-- Interruption option is available
+| Feature | nvim-spinetta | NOTE |
+| ------- | ------------- | ---- |
+| Spinners | :heavy_check_mark: | Includes 6 spinners |
+| Set your own spinner | :heavy_check_mark: |  |
+| Set a job | :heavy_check_mark: |  |
+| Set a another process not only a job | :heavy_check_mark: |  |
+| **start** function | :heavy_check_mark: | Several overloads |
+| Interruption option | :heavy_check_mark: | By the user or by and internal error |
 
 ## Usage
 - By default the values by parameters are:
