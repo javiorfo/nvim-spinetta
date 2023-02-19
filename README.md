@@ -62,6 +62,3 @@ use 'charkuils/nvim-spinetta'
 <img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
 **NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/charkuils/nvim-nyctovim) is used in this image.
-
-### Support
-- [Binance](https://www.binance.com/en/my/wallet/account/payment/send): `Pay ID: 546639204`
