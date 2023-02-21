@@ -8,11 +8,11 @@
 ## Installation
 `Vim Plug`
 ```vim
-Plug 'charkuils/nvim-spinetta'
+Plug 'javiorfo/nvim-spinetta'
 ```
 `Packer`
 ```lua
-use 'charkuils/nvim-spinetta'
+use 'javiorfo/nvim-spinetta'
 ```
 
 ## Overview
@@ -50,15 +50,18 @@ use 'charkuils/nvim-spinetta'
 ```
 
 #### SPINNERS
-- Check the spinners availables in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/lua/spinetta/spinners.lua)
+- Check the spinners availables in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/lua/spinetta/spinners.lua)
 - You can add your own spinner if you like. Further information in `:help spinetta`
 
 ## Screenshots
-#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/tests/test_spinners.lua)
+#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/tests/test_spinners.lua)
 
-<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" style="width:500px;"/>
+<img src="https://github.com/javiorfo/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
-#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/tests/test_interruption.lua)
-<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
+#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/tests/test_interruption.lua)
+<img src="https://github.com/javiorfo/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/charkuils/nvim-nyctovim) is used in this image.
+**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javiorfo/nvim-nyctovim) is used in this image.
+
+### Support
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=9BFAD3RVEZNQ2)

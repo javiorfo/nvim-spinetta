@@ -1,7 +1,7 @@
--- ##########################################################
--- # Maintainer: Mr. Charkuils                              #
--- # URL:        https://github.com/charkuils/nvim-spinetta #
--- ##########################################################
+-- #########################################################
+-- # Maintainer: Javier Orfo                               #
+-- # URL:        https://github.com/javiorfo/nvim-spinetta #
+-- #########################################################
 
 -- NOTE: To interrupt the job being executed, press Ctrl-C
 
