@@ -32,14 +32,6 @@ function M:get_main_msg()
     return self.main_msg
 end
 
-function M:get_interrupted_msg()
-    return self.interrupted_msg
-end
-
-function M:get_final_msg()
-    return self.final_msg
-end
-
 function M:get_spinner()
     return self.spinner
 end
@@ -59,7 +51,6 @@ function M:start(fn_to_stop_spinner)
     local internal_logger = logger:new()
 
     local index = 1
-    local is_interrupted = false
     while true do
         local _, error = pcall(function()
             internal_logger:info(main_msg .. spinner[index])
@@ -75,20 +66,17 @@ function M:start(fn_to_stop_spinner)
 
         if fn_to_stop_spinner() or error then
             if error then
-                is_interrupted = true
-                if self.interrupted_msg then
-                    vim.cmd("redraw")
-                    internal_logger:info(self.interrupted_msg)
+                if self.on_interrupted then
+                    self.on_interrupted()
                 end
             else
-                if self.final_msg then
-                    internal_logger:info(self.final_msg)
+                if self.on_success then
+                    self.on_success()
                 end
             end
             break
         end
     end
-    return is_interrupted
 end
 
 -- Function to check the state of a job

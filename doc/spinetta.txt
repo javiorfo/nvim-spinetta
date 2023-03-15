@@ -40,8 +40,8 @@ By default the values are: >
         spinner = DEFAULT_SPINNER, -- List of figures to use in the spinner
         speed_ms = 200,            -- Speed of the spinner in miliseconds
         main_msg = "",             -- Initial message in spinner
-        final_mst = nil,           -- Message when the job is finished
-        interrupted_msg = nil      -- Message when the job is interrupted
+        on_success = nil,          -- Function to implement when the job is finished
+        on_interrupted = nil       -- Function to implement when the job is interrupted
     }
 <
 
@@ -74,7 +74,9 @@ First, create a instance : >
         spinner = spinetta.ARROW_SPINNER,
         speed_ms = 100,
         main_msg = "Loading ",
-        final_msg = "Done!"
+        on_success = function()
+           print("Done!")
+        end
     }
 <
 
@@ -127,9 +129,13 @@ spinner process
 1.5 INTERRUPT JOB                                           *spinetta-interrupt*
 
 Considering that the job executed maybe could not end. To stop it simply press
-Ctrl-C. The parameter 'interrupted_msg' can be set to show a message when the
-job is interrupted by the user: >
-    require'spinetta':new({ interrupted_msg = "Job interrupted by the user" })
+Ctrl-C. The function parameter 'on_interrupted' can be set to show a message 
+when the job is interrupted by the user: >
+    require'spinetta':new{ 
+        on_interrupted = function()
+            vim.cmd("redraw")
+            print("Job interrupted by the user")
+        }
 <
 
 --------------------------------------------------------------------------------

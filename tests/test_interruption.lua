@@ -11,7 +11,16 @@ local spinetta = require'spinetta'
 local my_job = "sleep 5"
 
 -- Create spinner with values
-local spinetta_default = spinetta:new{ main_msg = "Job working ", final_msg = "Job finished!", interrupted_msg = "Job interrupted by user" }
+local spinetta_default = spinetta:new {
+    main_msg = "Job working ",
+    on_success = function()
+        print("Job finished!")
+    end,
+    on_interrupted = function()
+        vim.cmd("redraw")
+        print("Job interrupted by user")
+    end
+}
 
 -- Run job and spinner
 spinetta_default:start(spinetta.job_to_run(my_job))

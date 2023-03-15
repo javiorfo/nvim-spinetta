@@ -23,7 +23,8 @@ use 'javiorfo/nvim-spinetta'
 | Set a job | :heavy_check_mark: |  |
 | Set a another process not only a job | :heavy_check_mark: |  |
 | **start** function | :heavy_check_mark: | Several overloads |
-| Interruption option | :heavy_check_mark: | By the user or by and internal error |
+| On success option | :heavy_check_mark: | By the user |
+| On interruption option | :heavy_check_mark: | By the user or by an internal error |
 
 ## Usage
 - By default the values by parameters are:
@@ -32,8 +33,8 @@ use 'javiorfo/nvim-spinetta'
     spinner = DEFAULT_SPINNER, -- List of figures to use in the spinner
     speed_ms = 200,            -- Speed of the spinner in miliseconds
     main_msg = "",             -- Initial message in spinner
-    final_mst = nil,           -- Message when the job is finished
-    interrupted_msg = nil      -- Message when the job is interrupted
+    on_success = nil,          -- Function to implement when the job is finished
+    on_interrupted = nil       -- Function to implement when the job is interrupted
 }
 ```
 
