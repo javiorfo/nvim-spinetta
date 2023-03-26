@@ -1,7 +1,7 @@
--- #########################################################
--- # Maintainer: Javier Orfo                               #
--- # URL:        https://github.com/javiorfo/nvim-spinetta #
--- #########################################################
+-- ###########################################################
+-- # Maintainer: System Malt                                 #
+-- # URL:        https://github.com/systemmalt/nvim-spinetta #
+-- ###########################################################
 
 -- NOTE: To interrupt the job being executed, press Ctrl-C
 
