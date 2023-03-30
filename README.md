@@ -61,4 +61,4 @@ use 'javiorfo/nvim-spinetta'
 #### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/tests/test_interruption.lua)
 <img src="https://github.com/javiorfo/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
-**NOTE:** The colorscheme **umbra** from [nvim-nyctovim](https://github.com/javiorfo/nvim-nyctovim) is used in this image.
+**NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/javiorfo/nvim-whisky) is used in this image.
