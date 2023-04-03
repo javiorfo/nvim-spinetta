@@ -1,8 +1,8 @@
 # nvim-spinetta
-*nvim-spinetta is a Neovim plugin written in Lua for using a spinner during a job process.*
+*nvim-spinetta is a Neovim library written in Lua for using a spinner during a job process.*
 
 ## Caveats
-- This plugin has been developed on and for Linux following open source philosophy.
+- This library has been developed on and for Linux following open source philosophy.
 
 ## Installation
 `Vim Plug`
