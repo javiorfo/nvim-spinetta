@@ -1,7 +1,7 @@
--- #########################################################
--- # Maintainer: Javier Orfo                               #
--- # URL:        https://github.com/javiorfo/nvim-spinetta #
--- #########################################################
+-- ##########################################################
+-- # Maintainer: Javier Orfo                                #
+-- # URL:        https://github.com/whiskoder/nvim-spinetta #
+-- ##########################################################
 
 local logger = require'spinetta.logger'
 local spinners = require'spinetta.spinners'
