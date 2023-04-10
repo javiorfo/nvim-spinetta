@@ -1,6 +1,6 @@
 -- ##########################################################
--- # Maintainer: Javier Orfo                                #
--- # URL:        https://github.com/whiskoder/nvim-spinetta #
+-- # Maintainer: Mr. Charkuils                              #
+-- # URL:        https://github.com/charkuils/nvim-spinetta #
 -- ##########################################################
 
 local logger = require'spinetta.logger'
