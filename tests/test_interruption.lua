@@ -1,8 +1,3 @@
--- ##########################################################
--- # Maintainer: Mr. Charkuils                              #
--- # URL:        https://github.com/charkuils/nvim-spinetta #
--- ##########################################################
-
 -- NOTE: To interrupt the job being executed, press Ctrl-C
 
 local spinetta = require'spinetta'
