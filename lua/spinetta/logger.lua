@@ -1,8 +1,3 @@
--- ##########################################################
--- # Maintainer: Mr. Charkuils                              #
--- # URL:        https://github.com/charkuils/nvim-spinetta #
--- ##########################################################
-
 local M = {}
 
 local function logger(plugin_name, msg)
