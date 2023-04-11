@@ -1,8 +1,3 @@
--- ##########################################################
--- # Maintainer: Mr. Charkuils                              #
--- # URL:        https://github.com/charkuils/nvim-spinetta #
--- ##########################################################
-
 local spinetta = require'spinetta'
 
 -- To simulate a process that takes 3 seconds
