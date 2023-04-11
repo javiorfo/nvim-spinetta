@@ -1,8 +1,3 @@
--- ##########################################################
--- # Maintainer: Mr. Charkuils                              #
--- # URL:        https://github.com/charkuils/nvim-spinetta #
--- ##########################################################
-
 local logger = require'spinetta.logger'
 local spinners = require'spinetta.spinners'
 local Logger = logger:new("Spinetta")
