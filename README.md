@@ -5,13 +5,13 @@
 - This library has been developed on and for Linux following open source philosophy.
 
 ## Installation
-`Vim Plug`
-```vim
-Plug 'charkuils/nvim-spinetta'
-```
 `Packer`
 ```lua
 use 'charkuils/nvim-spinetta'
+```
+`Lazy`
+```lua
+{ 'charkuils/nvim-spinetta' }
 ```
 
 ## Overview
