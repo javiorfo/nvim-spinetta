@@ -62,3 +62,7 @@ use 'charkuils/nvim-spinetta'
 <img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
 **NOTE:** The colorscheme **smoky** from [nvim-whisky](https://github.com/charkuils/nvim-whisky) is used in this image.
+
+## Support Charkuils' Work
+
+<img src="https://github.com/charkuils/img/blob/master/binance/BinancePayQR.png?raw=true" alt="binance" style="width:300px;"/>
