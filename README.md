@@ -62,3 +62,8 @@ use 'javiorfo/nvim-spinetta'
 <img src="https://github.com/javiorfo/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
 
 **NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
+
+---
+
+### Donate
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
