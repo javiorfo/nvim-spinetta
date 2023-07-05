@@ -56,14 +56,15 @@ use 'caosystema/nvim-spinetta'
 ## Screenshots
 #### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/caosystema/nvim-spinetta/blob/master/tests/test_spinners.lua)
 
-<img src="https://github.com/caosystema/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" style="width:500px;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" />
 
 #### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/caosystema/nvim-spinetta/blob/master/tests/test_interruption.lua)
-<img src="https://github.com/caosystema/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" style="width:500px;"/>
+<img src="https://github.com/caosystema/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" />
 
 **NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/caosystema/nvim-nyctophilia) is used in this image.
 
 ---
 
-### Donate
+### Support CaoSystema's Work
+- [Binance](https://raw.githubusercontent.com/caosystema/img/master/BinancePayQR.png)
 - [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
