@@ -7,11 +7,11 @@
 ## Installation
 `Packer`
 ```lua
-use 'orfosys/nvim-spinetta'
+use 'charkuils/nvim-spinetta'
 ```
 `Lazy`
 ```lua
-{ 'orfosys/nvim-spinetta' }
+{ 'charkuils/nvim-spinetta' }
 ```
 
 ## Overview
@@ -50,20 +50,20 @@ use 'orfosys/nvim-spinetta'
 ```
 
 #### SPINNERS
-- Check the spinners availables in [this file](https://github.com/orfosys/nvim-spinetta/blob/master/lua/spinetta/spinners.lua)
+- Check the spinners availables in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/lua/spinetta/spinners.lua)
 - You can add your own spinner if you like. Further information in `:help spinetta`
 
 ## Screenshots
-#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/orfosys/nvim-spinetta/blob/master/tests/test_spinners.lua)
+#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/tests/test_spinners.lua)
 
-<img src="https://github.com/orfosys/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" />
+<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" />
 
-#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/orfosys/nvim-spinetta/blob/master/tests/test_interruption.lua)
-<img src="https://github.com/orfosys/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" />
+#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/charkuils/nvim-spinetta/blob/master/tests/test_interruption.lua)
+<img src="https://github.com/charkuils/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" />
 
-**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/orfosys/nvim-nyctophilia) is used in this image.
+**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/charkuils/nvim-nyctophilia) is used in this image.
 
 ---
 
 ### Donate
-- [Binance](https://raw.githubusercontent.com/orfosys/img/master/binance/BinancePayQR.png)
+- [Binance](https://raw.githubusercontent.com/charkuils/img/master/binance/BinancePayQR.png)
