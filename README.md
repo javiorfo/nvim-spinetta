@@ -7,11 +7,11 @@
 ## Installation
 `Packer`
 ```lua
-use 'chaosystema/nvim-spinetta'
+use 'javiorfo/nvim-spinetta'
 ```
 `Lazy`
 ```lua
-{ 'chaosystema/nvim-spinetta' }
+{ 'javiorfo/nvim-spinetta' }
 ```
 
 ## Overview
@@ -50,20 +50,21 @@ use 'chaosystema/nvim-spinetta'
 ```
 
 #### SPINNERS
-- Check the spinners availables in [this file](https://github.com/chaosystema/nvim-spinetta/blob/master/lua/spinetta/spinners.lua)
+- Check the spinners availables in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/lua/spinetta/spinners.lua)
 - You can add your own spinner if you like. Further information in `:help spinetta`
 
 ## Screenshots
-#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/chaosystema/nvim-spinetta/blob/master/examples/test_spinners.lua)
+#### Examples of the differents spinners included in this plugin. Run `:luafile %` in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/examples/test_spinners.lua)
 
-<img src="https://github.com/chaosystema/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" />
+<img src="https://github.com/javiorfo/img/blob/master/nvim-spinetta/spinetta.gif?raw=true" alt="spinetta" />
 
-#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/chaosystema/nvim-spinetta/blob/master/examples/test_interruption.lua)
-<img src="https://github.com/chaosystema/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" />
+#### Examples of interruption message included in this plugin. Run `:luafile %` and interrupt the process with `Ctrl-C` in [this file](https://github.com/javiorfo/nvim-spinetta/blob/master/examples/test_interruption.lua)
+<img src="https://github.com/javiorfo/img/blob/master/nvim-spinetta/interrupt.gif?raw=true" alt="spinetta" />
 
-**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/chaosystema/nvim-nyctophilia) is used in this image.
+**NOTE:** The colorscheme **nebula** from [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia) is used in this image.
 
 ---
 
 ### Donate
-- **Bitcoin** [(QR)](https://raw.githubusercontent.com/chaosystema/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
+- **Bitcoin** [(QR)](https://raw.githubusercontent.com/javiorfo/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
